@@ -1,0 +1,124 @@
+//задача 1
+Console.Write("X = ");
+int x = Convert.ToInt32(Console.ReadLine());
+if ((x % 2) == 0)
+{
+    Console.WriteLine("Число парне");
+}
+else
+{
+    Console.WriteLine("Число непарне");
+}
+
+//задача 2
+Console.Write("Ваша оцінка = ");
+int x = Convert.ToInt32(Console.ReadLine());
+if (x >= 90)
+{
+    Console.WriteLine("Відмінно");
+}
+else if (x >= 80)
+{
+    if (x < 90)
+    {
+        Console.WriteLine("Добре");
+    }
+}
+else if (x >= 70)
+{
+    if (x < 80)
+    {
+        Console.WriteLine("Задовільно");
+    }
+}
+else
+{
+    Console.WriteLine("Незадовільно");
+}
+
+//задача 3
+ Console.Write("РІК = ");
+            int year = Console.Read();
+            if (year % 4 == 0)
+            {
+                Console.WriteLine("Високосний");
+            }
+            else
+            {
+                Console.WriteLine("Не Високосний");
+            }
+//задача 4            
+Console.WriteLine("Калькулятор ВМІ ");
+            Console.Write("Ваша Вага = ");
+            float a = float.Parse(Console.ReadLine());
+            Console.Write("Ваш Зріст = ");
+            float b = float.Parse(Console.ReadLine());
+
+            float x = (a / (b * b));
+            Console.WriteLine($"Ваш ВМІ : {x}");
+
+            if (x >= 30)
+            {
+                Console.WriteLine("Ожиріння");
+            }
+            else if (x <= 25 && x >= 18.5)
+            {
+                Console.WriteLine("Надлишкова маса тіла");
+            }
+            else if (x <= 30 && x >= 25)
+            {
+                Console.WriteLine("Надлишкова маса тіла");
+            }
+            else if (x < 18.5)
+            {
+                Console.WriteLine("Недостатня маса тіла");
+            }
+//задача 5
+ Console.Write("First number = ");
+            float a = float.Parse(Console.ReadLine());
+            Console.Write("Second number = ");
+            float b = float.Parse(Console.ReadLine());
+            if (a > 0 && b > 0)
+            {
+                Console.Write("Two numbers is positive");
+            }
+            else if (a == 0 || b == 0)
+            {
+                Console.Write("One number equals zero");
+            }
+            else if (a < 0 && b < 0)
+            {
+                Console.Write("Two numbers is negative");
+            }
+            else
+            {
+                Console.Write("Numbers have different signs");
+            }
+//задача 6
+Console.Write("Ваш вік = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            if (a >= 65)
+            {
+                Console.Write("You are old");
+            }
+            else if (a >= 18 || a <= 64)
+            {
+                Console.Write("You are adult");
+            }
+            else if (a < 18)
+            {
+                Console.Write("You are minor");
+            }
+//задача 7
+ Console.Write("ВВедіть Логін : ");
+            string a = Convert.ToString(Console.ReadLine());
+            Console.Write("ВВедіть Пароль : ");
+            string b = Convert.ToString(Console.ReadLine());
+            if (a == "viktormaloman" && b == "1#54%9_tY")
+            {
+                Console.Write("Verify Successful");
+            }
+            else
+            {
+                Console.Write("Verify FAILED");
+            }
